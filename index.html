@@ -155,7 +155,7 @@
 
     <div class="container">
         <div id="countdown">✨ To My Everything, My Love... ✨</div>
-        <h1 id="headline">Happy Birthday, My Princess! 🎂</h1>
+        
         <p id="message" class="sub-text">"မီး"ရှိတဲ့ ကမ္ဘာကြီးက ကိုကို့အတွက် အလှပဆုံးလေးပဲ..."</p>
 
         <div id="surpriseContent" class="hidden">
@@ -164,9 +164,9 @@
             <div id="surprise-text" class="hidden">I Love You to the Moon and Back! 💖🌹</div>
 
             <div class="slideshow-container">
-                <div class="mySlides fade"><img src="c:\Users\LENOVO\Downloads\Telegram Desktop\photo_2026-03-22_18-21-46.jpg" alt="Memory 1"></div>
-                <div class="mySlides fade"><img src="c:\Users\LENOVO\Downloads\Telegram Desktop\photo_2026-03-22_18-21-25.jpg" alt="Memory 2"></div>
-                <div class="mySlides fade"><img src="c:\Users\LENOVO\Downloads\Telegram Desktop\photo_2026-03-22_18-21-21.jpg" alt="Memory 3"></div>
+                <div class="mySlides fade"><img src="photo_2026-03-22_18-21-46.jpg" alt="Memory 1"></div>
+                <div class="mySlides fade"><img src="photo_2026-03-22_18-21-25.jpg" alt="Memory 2"></div>
+                <div class="mySlides fade"><img src="photo_2026-03-22_18-21-21.jpg" alt="Memory 3"></div>
             </div>
 
             <div class="milestone-container" style="margin: 20px 0; padding: 15px; background: #fff0f3; border-radius: 20px;">
@@ -178,7 +178,7 @@
             <div class="video-container" style="margin: 20px 0; text-align: center;">
                 <p style="color: #ff758f; font-size: 14px; margin-bottom: 10px;">🎥  Kokoe's one of the most gorgeous little girl 🎀</p>
                 <video width="100%" style="border-radius: 20px; border: 5px solid #fff0f3;" autoplay muted loop>
-                    <source src="c:\Users\LENOVO\Downloads\Telegram Desktop\IMG_0572.MP4" type="video/mp4">
+                    <source src="IMG_0572.MP4" type="video/mp4">
                 </video>
             </div>
 
@@ -207,13 +207,13 @@
     </div>
 
     <audio id="bgMusic" loop>
-        <source src="music/Download.mp3" type="audio/mpeg">
+        <source src="download.mp3" type="audio/mpeg">
     </audio>
 
     <div id="giftModal" class="modal" onclick="closeGift()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <img src="https://i.pinimg.com/736x/3e/ec/f8/3eecf81d88595a8ae557585db75904ba.jpg" style="width: 50px; border-radius: 15px; margin-bottom: 15px;">
-            <h2 style="color: #ff4d6d; margin: 0;">အမှတ်တရ စာလေး</h2>
+            <h2 style="color: #ff4d6d; margin: 0;"> Birthday Letters</h2>
             <p style="color: #555; line-height: 1.6; font-size: 14px;">"မီးမီးက ကိုကို့ဘဝအတွက် အရမ်းအရေးပါတဲ့ အမျိုးသမီးလေးပါ။
                 ဘာမှမရှိတဲ့ ဆိုးရွားလွန်းနေခဲ့တဲ့ ကိုကို့အတွက် မီးမီးက အလင်းရောင်လေးတစ်ခုပါပဲ။
                 ကိုကို သိပ်ကို တန်ဖိုးထားရတဲ့ ကိုကိုးရဲ့ ဆုလဒ်လေး မွေးနေ့ကစပြီး နောက်နှစ်ပေါင်းများစွာတိုင်အောင် တူတူပျော်ပျော်ရွှင်ရွှင် ရှိသွားကြမယ်နော် 🥺💕"</p>
@@ -223,7 +223,7 @@
 
     <script>
         // Target Date
-        const birthdayDate = new Date('March 22, 2026 20:10:00').getTime();
+        const birthdayDate = new Date('March 22, 2026 20:58:00').getTime();
         let surpriseActivated = false;
 
         const countdownTimer = setInterval(() => {
@@ -239,7 +239,7 @@
                 const secs = Math.floor((diff % (1000 * 60)) / 1000);
                 countdownElement.innerText = `✨ မွေးနေ့အထိ ${days} ရက်၊ ${hours} နာရီ၊ ${mins} မိနစ်၊ ${secs} စက္ကန့် လိုသေးတယ် ✨`;
             } else {
-                countdownElement.innerHTML = "<h1 style='color: #ff4d6d; animation: heartBeat 1.5s infinite; margin: 0;'>🎊 HAPPY BIRTHDAY, MY LOVE! 🎊</h1>";
+                countdownElement.innerHTML = "<h1 style='color: #ff4d6d; animation: heartBeat 1.5s infinite; margin: 0;'> Happy Birthday, My Princess! 🎂 🎊</h1>";
                 surpriseContent.classList.remove('hidden');
                 if(!surpriseActivated) {
                     showSlides();
